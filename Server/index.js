@@ -6,7 +6,7 @@ const app = express();
 const cors = require("cors")
 const userRouter = require("./Routes/User.Routes");
 const mongoose = require("mongoose")
-let Uri = "mongodb+srv://ayodejialao0:Ayo123joy@cluster0.yosamsh.mongodb.net/bank-app?retryWrites=true&w=majority&appName=Cluster0"
+let Uri = process.env.URL;
 
 
 app.use(cors())
