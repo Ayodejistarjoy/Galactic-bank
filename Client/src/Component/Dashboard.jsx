@@ -29,7 +29,7 @@ const Dashboard = () => {
   const [Image, setImage] = useState("")
   const Navigate = useNavigate();
   useEffect(() => {
-    let url = "http://localhost:8200/page_auth"
+    let url = "https://galactic-bank.onrender.com/page_auth"
     axios.get(url, {
       headers: {
         'Authorization': `Bearer ${localStorage.getItem('token')}`

@@ -18,7 +18,7 @@ const Profile = () =>
 
 
     useEffect(() => {
-      let url = "http://localhost:8200/page_auth"
+      let url = "https://galactic-bank.onrender.com/page_auth"
       let token = localStorage.getItem("token")
       axios
       .get(url, {

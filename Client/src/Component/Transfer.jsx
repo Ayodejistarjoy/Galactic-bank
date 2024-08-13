@@ -11,7 +11,7 @@ const Transfer = () => {
   const [user, setuser] = useState("")
   const navigate = useNavigate();
   useEffect(() => {
-    let url = "http://localhost:8200/page_auth"
+    let url = "https://galactic-bank.onrender.com/page_auth"
     axios.get(url, {
       headers: {
         'Authorization': `Bearer ${localStorage.getItem('token')}`
@@ -35,7 +35,7 @@ const Transfer = () => {
   const [msg2, setmsg2] = useState("Enter amount")
 
   const handleReceiver = (e) => {
-    let url = "http://localhost:8200/intra-transfer/receiver"
+    let url = "https://galactic-bank.onrender.com/intra-transfer/receiver"
     if (e.target.value.length === 10) {
       axios.post(url, {
         accountNo: e.target.value
@@ -56,7 +56,7 @@ const Transfer = () => {
   }
 
   const handleAmount = (e) => {
-    let url = "http://localhost:8200/intra-transfer/transac"
+    let url = "https://galactic-bank.onrender.com/intra-transfer/transac"
     axios.post(url, {
       sender: user.emailInfo.email,
       amount: e.target.value
@@ -74,7 +74,7 @@ const Transfer = () => {
   }
 
   const handleTransfer = () => {
-    let url = "http://localhost:8200/intra-transfer"
+    let url = "https://galactic-bank.onrender.com/intra-transfer"
 
     if (receiver && amount) {
       document.getElementById("loader").style.display = "block"

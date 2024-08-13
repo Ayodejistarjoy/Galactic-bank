@@ -12,7 +12,7 @@ import * as Yup from 'yup';
 
 const Register = () => {
     const Navigate = useNavigate();
-    let url = "http://localhost:8200/register";
+    let url = "https://galactic-bank.onrender.com/register";
 
     const formik = useFormik({
         initialValues: {

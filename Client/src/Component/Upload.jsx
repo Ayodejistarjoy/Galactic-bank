@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 
 const Upload = () => {
-  let Url = "http://localhost:8200/upload"
+  let Url = "https://galactic-bank.onrender.com/upload"
     const [file, setFile] = useState("")
     const [Image, setImage] = useState("") 
     const [email, setemail] = useState("")
@@ -17,7 +17,7 @@ const Upload = () => {
     const navigate = useNavigate()
 
     useEffect(()=>{
-      let url = "http://localhost:8200/page_auth";
+      let url = "https://galactic-bank.onrender.com/page_auth";
       let token = localStorage.getItem("token");
 
       axios

@@ -6,9 +6,7 @@ const app = express();
 const cors = require("cors")
 const userRouter = require("./Routes/User.Routes");
 const mongoose = require("mongoose")
-let Uri = process.env.URL;
-
-// mongodb+srv://admin@cluster0.2xv6y.mongodb.net/?retryWrites=true&w=majority
+let uri = process.env.URI
 
 
 app.use(cors())
@@ -19,7 +17,7 @@ app.use("/", userRouter)
 
 app.listen(port, () => {
     console.log(`Server started on port ${port}`);
-    mongoose.connect(Uri)
+    mongoose.connect(uri)
  .then(()=>{
      console.log("connected to database already");
  })
