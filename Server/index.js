@@ -8,6 +8,8 @@ const userRouter = require("./Routes/User.Routes");
 const mongoose = require("mongoose")
 let Uri = process.env.URL;
 
+// mongodb+srv://admin@cluster0.2xv6y.mongodb.net/?retryWrites=true&w=majority
+
 
 app.use(cors())
 app.use(express.urlencoded({ extended: true, limit: '200mb' }))
