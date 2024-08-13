@@ -5,7 +5,8 @@ import { FaLongArrowAltLeft } from "react-icons/fa";
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import toast from 'react-hot-toast';
-
+import { FaPersonBreastfeeding } from "react-icons/fa6";
+import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 
 const Transfer = () => {
   const [user, setuser] = useState("")
@@ -122,14 +123,14 @@ const Transfer = () => {
             <li style={{}}>New Transfer</li>
           </div>
           <div>
-            <li style={{ border: "1px solid gray", height: "60px", width: "60px", alignItems: "center", justifyContent: "center", display: "flex", backgroundColor: "rgba(9,15,121,1)", color: "white", margin: "20px", fontSize: "30px" }}><BiTransferAlt />
+            <li style={{ border: "1px solid gray", height: "60px", width: "60px", alignItems: "center", justifyContent: "center", display: "flex", backgroundColor: "rgba(9,15,121,1)", color: "white", margin: "20px", fontSize: "30px" }}><FaPersonBreastfeeding />
             </li>
-            <li style={{}}>New Transfer</li>
+            <li style={{}}>Saved Beneficiary</li>
           </div>
           <div>
-            <li style={{ border: "1px solid gray", height: "60px", width: "60px", alignItems: "center", justifyContent: "center", display: "flex", backgroundColor: "rgba(9,15,121,1)", color: "white", margin: "20px", fontSize: "30px" }}><BiTransferAlt />
+            <li style={{ border: "1px solid gray", height: "60px", width: "60px", alignItems: "center", justifyContent: "center", display: "flex", backgroundColor: "rgba(9,15,121,1)", color: "white", margin: "20px", fontSize: "30px" }}><AiOutlineLoading3Quarters />
             </li>
-            <li style={{}}>New Transfer</li>
+            <li style={{}}>Re-occuring </li>
           </div>
         </div>
 
