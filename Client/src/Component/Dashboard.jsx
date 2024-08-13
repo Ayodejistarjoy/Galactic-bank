@@ -151,12 +151,13 @@ const Dashboard = () => {
 
       </div>
       <div>
+      <Link to="/transfer" style={{textDecoration:"none", color: "black"}}>
       <li style={{border:"1px solid gray",borderRadius:"50%",height:"50px",width:"50px",alignItems:"center",justifyContent:"center",display:"flex",margin:"10px",backgroundColor:"rgba(9,15,121,1)",color:"white"}}><BiMoneyWithdraw />
       </li>
       <li>
-      <Link to="/transfer" style={{textDecoration:"none", color: "black"}}>
+      
       Send Money
-      </Link></li>
+      </li></Link>
 
       </div>
       <div>
