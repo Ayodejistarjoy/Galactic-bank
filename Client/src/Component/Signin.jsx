@@ -49,7 +49,7 @@ const Signin = () => {
             <ul className='Go'>
                 <li>
                 <Link to ={"/"} style={{color:"rgba(9,15,121,1)", textDecoration:"none"}}>
-            Go to Ayodeji Home    
+            Go to Galactic Home    
                </Link>
                 </li>
             </ul>
